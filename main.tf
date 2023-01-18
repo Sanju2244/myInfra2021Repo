@@ -42,7 +42,7 @@ provider "aws" {
 #   }
 # }
 
-resource "aws_instance" "myFirstInstance" {
+resource "aws_instance" "tf-ec2" {
   ami           = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
@@ -52,11 +52,4 @@ resource "aws_instance" "myFirstInstance" {
   }
 }
 
-# Create Elastic IP address
-resource "aws_eip" "myFirstInstance" {
-  vpc      = true
-  instance = aws_instance.myFirstInstance.id
-tags= {
-    Name = "my_elastic_ip"
-  }
-}
+
