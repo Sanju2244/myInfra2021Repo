@@ -13,11 +13,6 @@ variable "instance_type" {
     default     =  "t2.micro" 
 }
 
-# variable "security_group" { 
-#     description = "Name of security group" 
-#     default     = "jenkins-sgroup-dec-2021" 
-# }
-
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
     default     = "my-ec2-instance" 
