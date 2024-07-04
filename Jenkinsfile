@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define the action variable
-        action = "apply" // Change this value as needed, e.g., "apply" or "destroy"
+        action = "destroy" // Change this value as needed, e.g., "apply" or "destroy"
     }
 
     stages {
